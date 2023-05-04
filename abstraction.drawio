@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="iOPQVPpiYG1zA9drn_Js" name="Page-1">
+        <mxGraphModel dx="649" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="37" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="610" width="610" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="494" width="610" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="40" width="610" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font color=&quot;#ffff00&quot;&gt;APP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font color=&quot;#30fa13&quot;&gt;CONFIG&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="514" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font color=&quot;#66ffff&quot;&gt;SERVER&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="725" y="50" width="115" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="CONTROLLERS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="15">
+                    <mxGeometry width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="DTO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="15">
+                    <mxGeometry y="33.333333333333336" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="HANDLERS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="15">
+                    <mxGeometry y="66.66666666666667" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="GATEWAY" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="200.00333333333336" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="SERVICES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="233.33666666666667" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="ENTITIES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="299.00333333333333" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="USECASES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="332.3366666666667" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="CONNECTION" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="393.66333333333336" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="DAO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="725" y="426.9966666666667" width="115" height="33.333333333333336" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="80" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="DATA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="213.34" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="DOMAIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="309" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="INFRA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="403.66" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="MAIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="524" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="ADAPTER" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="630" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="MIDDLEWARES" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="680" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="RESPONSE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="730" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

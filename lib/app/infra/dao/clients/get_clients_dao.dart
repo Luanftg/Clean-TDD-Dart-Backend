@@ -7,7 +7,7 @@ class GetCLientsDAO implements GetClientsGateway {
   @override
   Future<List<ClientEntity>> call() async {
     try {
-      final rows = await connection.query('statement');
+      final rows = await connection.query('SELECT * FROM clients');
       return rows
           .map(
             (map) => ClientEntity(

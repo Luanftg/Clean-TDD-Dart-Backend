@@ -7,7 +7,8 @@ class FakeDB implements Connection {
   }
 
   @override
-  Future<List<Map<String, dynamic>>> query(String statement) async {
+  Future<List<Map<String, dynamic>>> query(String statement,
+      [Map<String, dynamic> params = const {}]) async {
     return [
       {
         'id': 1,

@@ -1,11 +1,11 @@
 part of config;
 
 final controllers = <Controller>[
-  ClientsController(
-    getClientsUsecase: GetClientService(
-      getClientsGateway: GetCLientsDAO(
-        connection: FakeDB(),
-      ),
-    ),
-  )
+  // ClientsController(
+  //   getClientsUsecase: GetClientService(
+  //     getClientsGateway: GetCLientsDAO(
+  //       connection: PostgresSQL(),
+  //     ),
+  //   ),
+  // )
 ];
