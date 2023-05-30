@@ -18,13 +18,13 @@ void main() {
   group('GetClientsHanlder', () {
     test('deve retornar uma instancia de ResponseHandler ', () async {
       when(() => mockGetClientsUsecase.call()).thenAnswer((_) async => []);
-      final result = await getClientsHandler.call();
+      final result = await getClientsHandler.call(RequestParams());
       expect(result, isA<ResponseHandler>());
     });
 
     test('deve retornar uma status ok', () async {
       when(() => mockGetClientsUsecase.call()).thenAnswer((_) async => []);
-      final result = await getClientsHandler.call();
+      final result = await getClientsHandler.call(RequestParams());
       expect(result.status, StatusHandler.ok);
     });
     test('deve retornar uma lista de ClientOutputDTO', () async {
@@ -35,7 +35,7 @@ void main() {
                 email: 'email',
                 phoneNumber: '12-99721-3383')
           ]);
-      final result = await getClientsHandler.call();
+      final result = await getClientsHandler.call(RequestParams());
       expect(result.body, isA<List<ClientOutputDTO>>());
     });
   });

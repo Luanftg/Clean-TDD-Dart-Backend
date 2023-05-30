@@ -1,4 +1,4 @@
-import 'package:kadosh_backend/app/domain/entities/user/client_entity.dart';
+part of domain;
 
 abstract class GetClientsUsecase {
   Future<List<ClientEntity>> call();

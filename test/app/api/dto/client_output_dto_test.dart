@@ -1,6 +1,6 @@
 import 'package:kadosh_backend/app/api/api.dart';
+import 'package:kadosh_backend/app/domain/domain.dart';
 import 'package:kadosh_backend/app/domain/entities/user/client_entity.dart';
-import 'package:kadosh_backend/app/domain/usecases/user/get_clients_usecase.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
 

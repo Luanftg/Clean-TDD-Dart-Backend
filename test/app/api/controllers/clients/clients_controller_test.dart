@@ -1,6 +1,5 @@
 import 'package:kadosh_backend/app/api/api.dart';
 import 'package:kadosh_backend/app/domain/domain.dart';
-import 'package:kadosh_backend/app/domain/usecases/user/get_clients_usecase.dart';
 import 'package:test/test.dart';
 
 import '../../../../mock.dart';

@@ -5,7 +5,7 @@ class GetClientsHandler implements Handler {
   GetClientsHandler({required this.getClientsUsecase});
 
   @override
-  Future<ResponseHandler> call() async {
+  Future<ResponseHandler> call(RequestParams requestParams) async {
     final List<ClientEntity> clients = await getClientsUsecase();
     return ResponseHandler(
         status: StatusHandler.ok,

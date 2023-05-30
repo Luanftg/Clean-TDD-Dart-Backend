@@ -2,7 +2,6 @@ library api;
 
 import 'package:kadosh_backend/app/domain/domain.dart';
 import 'package:kadosh_backend/app/domain/entities/user/client_entity.dart';
-import 'package:kadosh_backend/app/domain/usecases/user/get_clients_usecase.dart';
 
 part 'controllers/clients/clients_controller.dart';
 part 'controllers/controller.dart';

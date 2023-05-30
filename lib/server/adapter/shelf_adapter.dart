@@ -20,7 +20,7 @@ class ShelfAdapter {
       final String verb = entry.key;
 
       router.add(verb, route, (Request request) async {
-        final responseHandler = await entry.value();
+        final responseHandler = await entry.value(RequestParams());
         switch (responseHandler.status) {
           case StatusHandler.ok:
             return ResponseJSON.ok(responseHandler.body);
