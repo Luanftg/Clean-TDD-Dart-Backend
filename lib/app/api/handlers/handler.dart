@@ -17,4 +17,4 @@ class ResponseHandler {
   ResponseHandler({this.body, required this.status});
 }
 
-enum StatusHandler { ok, created }
+enum StatusHandler { ok, created, internalServerError, badRequest }

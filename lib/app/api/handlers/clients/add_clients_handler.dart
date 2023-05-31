@@ -6,12 +6,24 @@ class AddClientsHandler implements Handler {
   AddClientsHandler({required this.addClientsUseCase});
   @override
   Future<ResponseHandler> call(RequestParams requestParams) async {
-    return ResponseHandler(
+    try {
+      final ClientEntity clientEntity =
+          ClientInputDTO.toEntity(requestParams.body!);
+      final ClientEntity clientCreated = await addClientsUseCase(clientEntity);
+      return ResponseHandler(
         status: StatusHandler.created,
-        body: ClientOutputDTO(
-            email: 'email@email.com',
-            id: 1,
-            name: 'name test',
-            phoneNumber: '1234-1234'));
+        body: ClientOutputDTO.toDTO(clientCreated),
+      );
+    } on AlreadyExistEmailException {
+      return ResponseHandler(
+        status: StatusHandler.badRequest,
+        body: MessageError(message: 'Already exist a client with this email'),
+      );
+    } catch (e) {
+      print(e.toString());
+      return ResponseHandler(
+        status: StatusHandler.internalServerError,
+      );
+    }
   }
 }
