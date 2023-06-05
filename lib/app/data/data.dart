@@ -8,3 +8,4 @@ part 'services/get_client_service.dart';
 part 'gateways/clients/get_clients_gateway.dart';
 part 'gateways/clients/add_clients_gateway.dart';
 part 'services/add_client_service.dart';
+part 'gateways/clients/get_client_by_email_gatewat.dart';
