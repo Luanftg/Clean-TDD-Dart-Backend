@@ -8,28 +8,16 @@ class AddClientDAO implements AddClientsGateway {
   Future<ClientEntity> call(ClientEntity clientEntity) async {
     try {
       final rows = await connection.query(
-          'INSERT INTO clients (id, name, email, password, phone_number, is_authenticated, photo_url) values ',
-          {
-            'id': clientEntity.id,
-            'name': clientEntity.name,
-            'email': clientEntity.email,
-            'password': clientEntity.password,
-            'phone_number': clientEntity.phoneNumber,
-            'photo_url': clientEntity.photoUrl,
-          });
-      return rows
-          .map(
-            (map) => ClientEntity(
-              id: map['id'],
-              name: map['name'],
-              email: map['email'],
-              password: map['password'],
-              phoneNumber: map['phone_number'],
-              isAuthenticated: map['is_authenticated'],
-              photoUrl: map['photo_url'],
-            ),
-          )
-          .first;
+        'INSERT INTO clients (name, email, phone) values (@name, @email, @phone) returning *',
+        {
+          'name': clientEntity.name,
+          'email': clientEntity.email,
+          // 'password': clientEntity.password,
+          'phone': clientEntity.phoneNumber,
+          // 'photo_url': clientEntity.photoUrl,
+        },
+      );
+      return rows.map(ClientDB.toEntity).first;
     } finally {
       await connection.close();
     }
