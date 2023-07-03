@@ -15,9 +15,4 @@ class ClientEntity {
     this.password,
     this.isAuthenticated = false,
   });
-
-  @override
-  String toString() {
-    return 'User(id: $id, name: $name, email: $email, photoUrl: $photoUrl, phoneNumber: $phoneNumber, password: $password, isAuthenticated: $isAuthenticated)';
-  }
 }

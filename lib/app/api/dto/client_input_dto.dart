@@ -6,9 +6,9 @@ abstract class ClientInputDTO {
       id: 0,
       email: map['email'],
       name: map['name'],
-      phoneNumber: map['phone_number'],
-      password: map['password'],
-      photoUrl: map['photo_url'],
+      phoneNumber: map['phone'],
+      // password: map['password'],
+      // photoUrl: map['photo_url'],
     );
   }
 }

@@ -14,10 +14,10 @@ class GetCLientsDAO implements GetClientsGateway {
               id: map['id'],
               name: map['name'],
               email: map['email'],
-              password: map['password'],
-              phoneNumber: map['phone_number'],
-              isAuthenticated: map['is_authenticated'],
-              photoUrl: map['photo_url'],
+              // password: map['password'],
+              phoneNumber: map['phone'],
+              // isAuthenticated: map['is_authenticated'],
+              // photoUrl: map['photo_url'],
             ),
           )
           .toList();
