@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:kadosh_backend/app/data/data.dart';
 import 'package:kadosh_backend/app/domain/domain.dart';
 import 'package:kadosh_backend/app/domain/entities/user/client_entity.dart';

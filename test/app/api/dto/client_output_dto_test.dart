@@ -1,22 +1,24 @@
 import 'package:kadosh_backend/app/api/api.dart';
-import 'package:kadosh_backend/app/domain/domain.dart';
+
 import 'package:kadosh_backend/app/domain/entities/user/client_entity.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
 
 import '../../../mock.dart';
 
-late MockGetClientsUsecase mockGetClientsUsecase;
-late GetClientsUsecase getClientsUsecase;
+// late MockGetClientsUsecase mockGetClientsUsecase;
+// late GetClientsUsecase getClientsUsecase;
 
 void main() {
   setUpAll(() async {
-    mockGetClientsUsecase = MockGetClientsUsecase();
+    // mockGetClientsUsecase = MockGetClientsUsecase();
   });
   test('deve retornar uma lista de ClientOutputDTO', () async {
-    when(() => mockGetClientsUsecase.call())
-        .thenAnswer((_) async => <ClientEntity>[]);
-    final clients = await getClientsUsecase.call();
+    // when(() => mockGetClientsUsecase.call())
+    //     .thenAnswer((_) async => <ClientEntity>[]);
+    // final clients = await getClientsUsecase.call();
+    // final clients = await mockGetClientsUsecase.call();
+    final clients = <ClientEntity>[];
     final result = ClientOutputDTO.toCollectionDTO(clients);
     expect(result, isA<List<ClientOutputDTO>>());
   });
